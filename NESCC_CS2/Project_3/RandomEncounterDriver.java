@@ -3,8 +3,7 @@
  * File name: RandomEncounterDriver.java
  * Project name: Random Encounters
  * -------------------------------------------------
- * Creator's name: John McMeen
- * Email: jnmcmeen@northeaststate.edu
+ * Creator's name: Shae Allen
  * Course and section: CISP 1020
  * Creation date: Apr 5, 2020
  * -------------------------------------------------
@@ -22,9 +21,8 @@ import java.util.Random;
  * - Public methods: main
  * </b>
  * <hr>
- * Date created: Apr 05, 2016
  * <hr>
- * @author John McMeen
+ * @author Shae Allen
  * Edited Apr 9, 2020  by Shae Allen
  */
 public class RandomEncounterDriver {
