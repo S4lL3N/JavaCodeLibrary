@@ -1,0 +1,6 @@
+public class InvalidRPMException extends Exception{
+    public InvalidRPMException(String err){
+        super(err);
+        System.out.println("RPM must be greater than 0.");
+    }//end InvalidRPMException
+}//end class

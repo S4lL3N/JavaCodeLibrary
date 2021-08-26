@@ -1,0 +1,10 @@
+
+
+public class InvalidTorqueException extends Exception{
+
+    public InvalidTorqueException(String message){
+        super(message);
+        System.out.println("Torque must be greater than 0.");
+
+    }//end InvalidTorqueException
+}//end class
