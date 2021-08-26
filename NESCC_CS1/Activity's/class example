@@ -1,0 +1,49 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // local variables -------------------------------------------------------------------------------------------
+        Scanner cin = new Scanner(System.in);
+        String input = "";
+        int gradeOne = 0;
+        int gradeTwo = 0;
+        double gradeAvg = 0.0;
+
+
+        // input area -------------------------------------------------------------------------------------------------
+        System.out.print("Enter a grade: ");
+        input = cin.nextLine();
+        gradeOne = Integer.parseInt(input);
+        System.out.print("Enter another grade: ");
+        input = cin.nextLine();
+        gradeTwo = Integer.parseInt(input);
+
+        // process ----------------------------------------------------------------------------------------------------
+        gradeAvg = (gradeOne + gradeTwo) / 2.0;
+
+        // output -----------------------------------------------------------------------------------------------------
+        System.out.println("You entered: " + gradeOne);
+        System.out.println("You entered: " + gradeTwo);
+        System.out.println("grade average is: " + gradeAvg);
+    }
+}
+//System.out.println("You entered: " + input);
+//System.out.print("Please enter a sentence: "); //notice I use print instead of println, why?
+
+//input = cin.nextLine(); // get a String from the default input (keyboard)
+//System.out.println("You entered: " + input);
+
+//System.out.print("Next, enter an integer value: ");
+//input = cin.nextLine();
+//System.out.println("You entered: " + input + " but it is not an integer");
+//System.out.print("So, let's try to convert the String to an integer ...");
+
+//gradeTwo = Integer.parseInt(input); //attempt to convert the String to an Integer
+//What happens if you enter 3A for example? (This is a call to a static method in Integer class)
+
+//System.out.println(" this is a true integer: " + gradeOne);
+//System.out.println("Goodbye");
