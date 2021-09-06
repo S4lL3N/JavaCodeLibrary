@@ -10,7 +10,7 @@ import java.text.DecimalFormat;
 *
 *
 * Project 3 
-* @author  Shae Allen – CPSC-1220-AO1 
+* @author  Shae Allen â€“ CPSC-1220-AO1 
 * @version 8/31/21
 */
 public class SpherocylinderList {
@@ -149,16 +149,20 @@ public class SpherocylinderList {
    * @return found the found Spherocylinder or null .
    */
    public Spherocylinder findSpherocylinder(String labelIn) {
-      Spherocylinder found = new Spherocylinder("", 0, 0);
+      Spherocylinder sc = new Spherocylinder("", 0, 0);
+      boolean found = false;
       for (int i = 0; i < scNumber; i++) {
          if (scList[i].getLabel().toUpperCase().equals(labelIn.toUpperCase())) {
-            found = scList[i];
+            sc = scList[i];
+            found = true;
          }
-         else {
-            found = null;
-         }
+      }  
+      if (found) {
+         return sc;
       }
-      return found;    
+      else {
+         return null;
+      }
    }
 /**
 * searchs the the list by name then deletes.
