@@ -14,7 +14,7 @@ main proc
 	call WriteString
 
 	;===================================================================================
-	;Exersise 1
+	;Exercise 1
 
 	;for tests assign various values to from 0 - 9 into the AL register.
 
@@ -51,7 +51,7 @@ main proc
 	call WriteChar
 
 	;===================================================================================
-	;Exersise 2
+	;Exercise 2
 
 	;set AL to 94h
 	mov al, 94h
@@ -88,7 +88,7 @@ main proc
 	call WriteChar
 
 	;===================================================================================
-	;Exersise 3
+	;Exercise 3
 
 	;read decimal # from keyboard
 	call readChar
@@ -109,7 +109,7 @@ main proc
 	call WriteChar
 
 	;===================================================================================
-	;Exersise 4
+	;Exercise 4
 
 	;read in two decimal digits 
 	call ReadChar
