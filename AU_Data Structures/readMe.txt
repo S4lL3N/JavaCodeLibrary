@@ -1,3 +1,7 @@
+Auburn University
+CPSC 1230
+Dean Hendrix
+
 Welcome to CPSC 1230!
 This is the data structures and algorithms course in the Online Bachelor of Computer Science program, and it is one of the cornerstone courses for that curriculum.
 In this course, you will learn about developing programs that use data structures and collections to efficiently store data. Emphasis will be placed on the interplay
