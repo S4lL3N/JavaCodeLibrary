@@ -18,7 +18,7 @@ public final class Selector {
      *
      */
     private Selector() { }
-    
+
     /**
      * Selects the minimum value from the array a. This method
      * throws IllegalArgumentException if a is null or has zero
@@ -27,14 +27,14 @@ public final class Selector {
     public static int min(int[] a) throws IllegalArgumentException{
         if (a == null || a.length == 0) throw new IllegalArgumentException();
         int min = a[0];
-        for(int i:a){
-            if (i < min){
-                min = i;
+        for(int num : a){
+            if (num < min){
+                min = num;
             }
         }
         return min;
     }
-    
+
     /**
      * Selects the maximum value from the array a. This method
      * throws IllegalArgumentException if a is null or has zero
@@ -43,14 +43,14 @@ public final class Selector {
     public static int max(int[] a) throws IllegalArgumentException {
         if (a == null || a.length == 0) throw new IllegalArgumentException();
         int max = a[0];
-        for(int i : a){
-            if (i > max){
-                max = i;
+        for(int num : a){
+            if (num > max){
+                max = num;
             }
         }
         return max;
     }
-    
+
     /**
      * Selects the kth minimum value from the array a. This method
      * throws IllegalArgumentException if a is null, has zero length,
@@ -75,7 +75,7 @@ public final class Selector {
 
         return kmin;
     }
-    
+
     /**
      * Selects the kth maximum value from the array a. This method
      * throws IllegalArgumentException if a is null, has zero length,
@@ -99,7 +99,7 @@ public final class Selector {
         }
         return kmax;
     }
-    
+
     /**
      * Returns an array containing all the values in a in the
      * range [low..high]; that is, all the values that are greater
@@ -115,17 +115,17 @@ public final class Selector {
     public static int[] range(int[] a, int low, int high) throws IllegalArgumentException {
         if (a == null || a.length == 0) throw new IllegalArgumentException();
         int totalFound = 0;
-        for (int i : a) {
-            if (i >= low && i <= high) totalFound++;
+        for (int num : a) {
+            if (num >= low && num <= high) totalFound++;
         }
         int[] returnArray = new int[totalFound];
         int count = 0;
-        for (int i : a) {
-            if (i >= low && i <= high) returnArray[count++] = i;
+        for (int num : a) {
+            if (num >= low && num <= high) returnArray[count++] = num;
         }
         return returnArray;
     }
-    
+
     /**
      * Returns the smallest value in a that is greater than or equal to
      * the given key. This method throws an IllegalArgumentException if
@@ -137,8 +137,8 @@ public final class Selector {
         if (a == null || a.length == 0) throw new IllegalArgumentException();
         int smallest = max(a);
 
-        for (int i : a) {
-            if ((i >= key) && (i < smallest)) smallest = i;
+        for (int num : a) {
+            if ((num >= key) && (num < smallest)) smallest = num;
         }
         return smallest;
     }
@@ -154,8 +154,8 @@ public final class Selector {
     public static int floor(int[] a, int key) throws IllegalArgumentException {
         if (a == null || a.length == 0) throw new IllegalArgumentException();
         int largest = min(a);
-        for (int i : a){
-            if((i <= key) && (i > largest)) largest = i;
+        for (int num : a){
+            if((num <= key) && (num > largest)) largest = num;
         }
         return largest;
     }
