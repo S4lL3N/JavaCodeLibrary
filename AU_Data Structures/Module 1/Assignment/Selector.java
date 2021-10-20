@@ -1,3 +1,5 @@
+package Algorithms;
+
 import java.util.Arrays;
 
 /**
@@ -135,12 +137,19 @@ public final class Selector {
      */
     public static int ceiling(int[] a, int key) throws IllegalArgumentException {
         if (a == null || a.length == 0) throw new IllegalArgumentException();
-        int smallest = max(a);
-
+        boolean found = false;
+        int ceiling = max(a);
         for (int num : a) {
-            if ((num >= key) && (num < smallest)) smallest = num;
+            if (!found && num >= key) {
+                ceiling= num;
+                found = true;
+            }
+            else if(num >= key && num <= ceiling) {
+                ceiling = num;
+            }
         }
-        return smallest;
+        if(!found) throw  new IllegalArgumentException();
+        return ceiling;
     }
 
 
@@ -153,11 +162,19 @@ public final class Selector {
      */
     public static int floor(int[] a, int key) throws IllegalArgumentException {
         if (a == null || a.length == 0) throw new IllegalArgumentException();
-        int largest = min(a);
+        int floor = min(a);
+        boolean found = false;
         for (int num : a){
-            if((num <= key) && (num > largest)) largest = num;
+            if(!found && num <= key) {
+                floor = num;
+                found = true;
+            }
+            else if(num <= key && num >= floor) {
+                floor = num;
+            }
         }
-        return largest;
+        if(!found) throw  new IllegalArgumentException();
+        return floor;
     }
 
     private static int countDistinctValues(int[] a) {
@@ -179,3 +196,4 @@ public final class Selector {
         return b;
     }
 }
+
