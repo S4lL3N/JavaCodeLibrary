@@ -26,7 +26,7 @@ class SelectorTest {
          */
         List<Integer> a = new ArrayList<Integer>(List.of(2, 8, 7, 3, 4));
         int expected = 2;
-        int actual = Selector.min(a, ascendingInteger);
+        int actual = Selector2.min(a, ascendingInteger);
         assertEquals(expected, actual);
 
     }
@@ -40,7 +40,7 @@ class SelectorTest {
          */
         List<Integer> a = new ArrayList<Integer>(List.of(5, 9, 1, 7, 3));
         int expected = 1;
-        int actual = Selector.min(a, ascendingInteger);
+        int actual = Selector2.min(a, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -53,7 +53,7 @@ class SelectorTest {
          */
         List<Integer> a = new ArrayList<Integer>(List.of(8, 7, 6, 5, 4));
         int expected = 4;
-        int actual = Selector.min(a, ascendingInteger);
+        int actual = Selector2.min(a, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -66,37 +66,37 @@ class SelectorTest {
          */
         List<Integer> a = new ArrayList<Integer>(List.of(8, 2, 8, 7, 3, 3, 4));
         int expected = 2;
-        int actual = Selector.min(a, ascendingInteger);
+        int actual = Selector2.min(a, ascendingInteger);
         assertEquals(expected, actual);
     }
-    
+
 
     @Test
     void max() {
         List<Integer> a = new ArrayList<Integer>(List.of(2, 8, 7, 3, 4));
         int expected = 8;
-        int actual = Selector.max(a, ascendingInteger);
+        int actual = Selector2.max(a, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
     void max2() {
         List<Integer> a = new ArrayList<Integer>(List.of(5, 9, 1, 7, 3));
         int expected = 9;
-        int actual = Selector.max(a, ascendingInteger);
+        int actual = Selector2.max(a, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
     void max3() {
         List<Integer> a = new ArrayList<Integer>(List.of(8, 7, 6, 5, 4));
         int expected = 8;
-        int actual = Selector.max(a, ascendingInteger);
+        int actual = Selector2.max(a, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
     void max4() {
         List<Integer> a = new ArrayList<Integer>(List.of(8, 2, 8, 7, 3, 3, 4));
         int expected = 8;
-        int actual = Selector.max(a, ascendingInteger);
+        int actual = Selector2.max(a, ascendingInteger);
         assertEquals(expected, actual);
     }
 
@@ -113,7 +113,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(2, 8, 7, 3, 4));
         int key = 1;
         int expected = 2;
-        int actual = Selector.kmin(a, key, ascendingInteger);
+        int actual = Selector2.kmin(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -129,7 +129,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(5, 9, 1, 7, 3));
         int key = 3;
         int expected = 5;
-        int actual = Selector.kmin(a, key, ascendingInteger);
+        int actual = Selector2.kmin(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -145,7 +145,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(8, 7, 6, 5, 4));
         int key = 5;
         int expected = 8;
-        int actual = Selector.kmin(a, key, ascendingInteger);
+        int actual = Selector2.kmin(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -161,7 +161,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(8, 2, 8, 7, 3, 3, 4));
         int key = 3;
         int expected = 4;
-        int actual = Selector.kmin(a, key, ascendingInteger);
+        int actual = Selector2.kmin(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
 
@@ -179,7 +179,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(2, 8, 7, 3, 4));
         int key = 1;
         int expected = 8;
-        int actual = Selector.kmax(a, key, ascendingInteger);
+        int actual = Selector2.kmax(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -195,7 +195,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(5, 9, 1, 7, 3));
         int key = 3;
         int expected = 5;
-        int actual = Selector.kmax(a, key, ascendingInteger);
+        int actual = Selector2.kmax(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -211,7 +211,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(8, 7, 6, 5, 4));
         int key = 5;
         int expected = 4;
-        int actual = Selector.kmax(a, key, ascendingInteger);
+        int actual = Selector2.kmax(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -227,7 +227,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(8, 2, 8, 7, 3, 3, 4));
         int key = 3;
         int expected = 4;
-        int actual = Selector.kmax(a, key, ascendingInteger);
+        int actual = Selector2.kmax(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
 
@@ -248,7 +248,7 @@ class SelectorTest {
         Integer low = 1;
         Integer high = 5;
         Collection<Integer> expected = new ArrayList<Integer>(List.of(2,3,4));
-        Collection<Integer> actual = Selector.range(a, low, high, ascendingInteger);
+        Collection<Integer> actual = Selector2.range(a, low, high, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -267,7 +267,7 @@ class SelectorTest {
         Integer low = 3;
         Integer high = 5;
         Collection<Integer> expected = new ArrayList<Integer>(List.of(5,3));
-        Collection<Integer> actual = Selector.range(a, low, high, ascendingInteger);
+        Collection<Integer> actual = Selector2.range(a, low, high, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -286,7 +286,7 @@ class SelectorTest {
         Integer low = 4;
         Integer high = 8;
         Collection<Integer> expected = new ArrayList<Integer>(List.of(8,7,6,5,4));
-        Collection<Integer> actual = Selector.range(a, low, high, ascendingInteger);
+        Collection<Integer> actual = Selector2.range(a, low, high, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -305,8 +305,22 @@ class SelectorTest {
         Integer low = 3;
         Integer high = 7;
         Collection<Integer> expected = new ArrayList<Integer>(List.of(7,3,3,4));
-        Collection<Integer> actual = Selector.range(a, low, high, ascendingInteger);
+        Collection<Integer> actual = Selector2.range(a, low, high, ascendingInteger);
         assertEquals(expected, actual);
+    }
+    @Test
+    void range5() {
+        List<Integer> a = new ArrayList<>(List.of(8, 2, 8, 7, 3, 3, 4));
+        Integer low = 0;
+        Integer high = 0;
+        boolean actual = false;
+        try {
+            Selector2.range(a, low, high, ascendingInteger);
+        }
+        catch (NoSuchElementException e) {
+            actual = true;
+        }
+        assertTrue(actual);
     }
 
 
@@ -322,7 +336,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(2, 8, 7, 3, 4));
         int key = 1;
         int expected = 2;
-        int actual = Selector.ceiling(a, key, ascendingInteger);
+        int actual = Selector2.ceiling(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -337,7 +351,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(5, 9, 1, 7, 3));
         int key = 7;
         int expected = 7;
-        int actual = Selector.ceiling(a, key, ascendingInteger);
+        int actual = Selector2.ceiling(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -352,7 +366,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(8, 7, 6, 5, 4));
         int key = 0;
         int expected = 4;
-        int actual = Selector.ceiling(a, key, ascendingInteger);
+        int actual = Selector2.ceiling(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -367,10 +381,9 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(8, 2, 8, 7, 3, 3, 4));
         int key = 5;
         int expected = 7;
-        int actual = Selector.ceiling(a, key, ascendingInteger);
+        int actual = Selector2.ceiling(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
-
 
     @Test
     void floor() {
@@ -384,7 +397,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(2, 8, 7, 3, 4));
         int key = 6;
         int expected = 4;
-        int actual = Selector.floor(a, key, ascendingInteger);
+        int actual = Selector2.floor(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -399,7 +412,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(5, 9, 1, 7, 3));
         int key = 1;
         int expected = 1;
-        int actual = Selector.floor(a, key, ascendingInteger);
+        int actual = Selector2.floor(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -414,7 +427,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(8, 7, 6, 5, 4));
         int key = 9;
         int expected = 8;
-        int actual = Selector.floor(a, key, ascendingInteger);
+        int actual = Selector2.floor(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
     @Test
@@ -429,7 +442,7 @@ class SelectorTest {
         List<Integer> a = new ArrayList<Integer>(List.of(8, 2, 8, 7, 3, 3, 4));
         int key = 5;
         int expected = 4;
-        int actual = Selector.floor(a, key, ascendingInteger);
+        int actual = Selector2.floor(a, key, ascendingInteger);
         assertEquals(expected, actual);
     }
 
