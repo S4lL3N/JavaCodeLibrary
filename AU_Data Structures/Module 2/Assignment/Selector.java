@@ -13,16 +13,16 @@ import java.util.NoSuchElementException;
  */
 public final class Selector {
 
-    /**
-     * Can't instantiate this class.
-     *
-     * D O   N O T   C H A N G E   T H I S   C O N S T R U C T O R
-     *
-     */
+/**
+ * Can't instantiate this class.
+ *
+ * D O   N O T   C H A N G E   T H I S   C O N S T R U C T O R
+ *
+ */
     private Selector() { }
 
 
-    /**
+   /**
      * Returns the minimum value in the Collection coll as defined by the
      * Comparator comp. If either coll or comp is null, this method throws an
      * IllegalArgumentException. If coll is empty, this method throws a
@@ -88,7 +88,7 @@ public final class Selector {
      */
     public static <T> T kmin(Collection<T> coll, int k, Comparator<T> comp) {
         if(coll == null || comp == null) throw new IllegalArgumentException();
-        if(coll.isEmpty()) throw new NoSuchElementException();
+        if(coll.isEmpty() || k <= 0) throw new NoSuchElementException();
         T kmin;
         List<T> collCopy = new ArrayList<T>(coll);
         if (k == 1) kmin = min(coll, comp);
@@ -119,7 +119,7 @@ public final class Selector {
      */
     public static <T> T kmax(Collection<T> coll, int k, Comparator<T> comp) {
         if(coll == null || comp == null) throw new IllegalArgumentException();
-        if(coll.isEmpty()) throw new NoSuchElementException();
+        if(coll.isEmpty()|| k <= 0) throw new NoSuchElementException();
         T kmax;
         List<T> collCopy = new ArrayList<T>(coll);
         if (k == 1) kmax = max(coll, comp);
@@ -185,7 +185,7 @@ public final class Selector {
      */
     public static <T> T ceiling(Collection<T> coll, T key, Comparator<T> comp) {
         if(coll == null || comp == null) throw new IllegalArgumentException();
-        if(coll.isEmpty()) throw new NoSuchElementException();
+        if(coll.isEmpty()|| comp.compare(key, max(coll, comp)) > 0) throw new NoSuchElementException();
         T ceiling= max(coll, comp);
         for (T element : coll) {
             if ((comp.compare(element, key) >= 0) && (comp.compare(element, ceiling) < 0)) ceiling = element;
@@ -211,7 +211,7 @@ public final class Selector {
      */
     public static <T> T floor(Collection<T> coll, T key, Comparator<T> comp) {
         if(coll == null || comp == null) throw new IllegalArgumentException();
-        if(coll.isEmpty()) throw new NoSuchElementException();
+        if(coll.isEmpty()|| comp.compare(key, min(coll, comp)) < 0) throw new NoSuchElementException();
         T floor = min(coll, comp);
         for (T element : coll) {
             if ((comp.compare(element, key) <= 0) && (comp.compare(element, floor) > 0)) floor = element;
