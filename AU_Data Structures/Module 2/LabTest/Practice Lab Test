@@ -30,8 +30,9 @@ public class CountEvens {
     }
 
 }
-
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Part 2
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Returning the Less-Than Subset
 Complete the body of the lessThanSubset method so that it returns a Collection containing only the elements in the parameter collection that are strictly less than the parameter value, with respect to the natural order defined for type T. An instance of ArrayList has been declared for you to use to assemble the correct subset of values and return.
 
