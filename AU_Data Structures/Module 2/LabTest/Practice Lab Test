@@ -1,0 +1,73 @@
+PRACTICE Lab Test 1 Part 1
+Counting Even Values in an Array
+Complete the body of the countEvens method so that it returns the number of even values in the array parameter. Remember that you can test if an integer is evenly divisible by 2 by using %, the remainder ("mod") operator in Java. If x % y evaluates to 0, then y divides into x evenly, that is, with no remainder.
+
+The following table lists various examples of the array parameter (values) and the correct return value from the call countEvens(values).
+
+values	Return Value
+[1, 2, 3, 4, 5]	2
+[2, 4, 6, 8, 10]	5
+[0, 1, 2, 3, 4]	3
+[1, 1, 1, 1, 1]	0
+
+
+***STARTER CODE***
+
+
+/**
+ * Count the number of even values in an array.
+ *
+ */
+public class CountEvens {
+
+    //  C O M P L E T E   T H I S    M E T H O D 
+
+    /**
+     * Returns the number of even values in the paramter.
+     */
+    public static int countEvens(int[] values) {
+        return -1;
+    }
+
+}
+
+Part 2
+Returning the Less-Than Subset
+Complete the body of the lessThanSubset method so that it returns a Collection containing only the elements in the parameter collection that are strictly less than the parameter value, with respect to the natural order defined for type T. An instance of ArrayList has been declared for you to use to assemble the correct subset of values and return.
+
+The following table lists various examples of the parameters collection and value along with the correct return value from the call lessThanSubset(collection, value). The order of values in the returned collection is not important. If there are no qualifying values, the method should return an empty collection.
+
+collection	value	Return Value
+[9, 1, 5, 3, 7]	7	[1, 5, 3]
+[9, 1, 5, 3, 7]	10	[9, 1, 5, 3, 7]
+[9, 1, 5, 3, 7]	1	[]
+
+
+***STARTER CODE***
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+
+/**
+ * Return the elements in a collection that are strictly less than a specified
+ * value.
+ *
+ */
+public class LessThanSubset {
+
+    // C O M P L E T E   T H I S   M E T H O D 
+
+    /**
+     * Returns the elements in collection strictly less than value.
+     */
+    public static <T extends Comparable<T>> 
+            Collection<T> lessThanSubset(Collection<T> collection, T value) {
+        ArrayList<T> result = new ArrayList<>();
+        
+        return result;
+    }
+
+}
+
+
