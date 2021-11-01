@@ -1,0 +1,23 @@
+Instructions
+Part 1
+Counting Odd Values in an Array
+Complete the body of the countOdds method so that it returns the number of odd values in the array parameter. Remember that you can test if an integer is evenly divisible by 2 by using %, the remainder ("mod") operator in Java. If x % y evaluates to 0, then y divides into x evenly, that is, with no remainder.
+
+The following table lists various examples of the array parameter (values) and the correct return value from the call countOdds(values).
+
+values	Return Value
+[1, 2, 3, 4, 5]	3
+[2, 4, 6, 8, 10]	0
+[0, 1, 2, 3, 4]	2
+[1, 1, 1, 1, 1]	5
+
+Part 2
+Returning the Greater-Than Subset
+Complete the body of the greaterThanSubset method so that it returns a Collection containing only the elements in the parameter collection that are strictly greater than the parameter value, with respect to the natural order defined for type T. An instance of ArrayList has been declared for you to use to assemble the correct subset of values and return.
+
+The following table lists various examples of the parameters collection and value along with the correct return value from the call greaterThanSubset(collection, value). The order of values in the returned collection is not important. If there are no qualifying values, the method should return an empty collection.
+
+collection	value	Return Value
+[9, 1, 5, 3, 7]	7	[9]
+[9, 1, 5, 3, 7]	10	[]
+[9, 1, 5, 3, 7]	1	[9, 5, 3, 7]
