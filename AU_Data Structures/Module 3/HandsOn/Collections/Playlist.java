@@ -12,7 +12,11 @@ public class Playlist {
 
 	/** Calculates the total running time of a given list of songs. */
 	public static int runningTime(List<Song> playlist) {
-		return -99;
+	      int runtime = 0;
+	      for (Song song : playlist){
+		 runtime += song.getDuration();
+	      }
+	      return runtime;
 	}
 
 	/** Drives execution. */
