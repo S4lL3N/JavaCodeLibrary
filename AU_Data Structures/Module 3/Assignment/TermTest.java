@@ -1,4 +1,4 @@
-package Tests;
+
 
 import Algorithms.Term;
 import org.junit.jupiter.api.Test;
