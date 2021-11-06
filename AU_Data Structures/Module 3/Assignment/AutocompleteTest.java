@@ -1,4 +1,4 @@
-package Tests;
+
 
 import Algorithms.Autocomplete;
 import Algorithms.Term;
