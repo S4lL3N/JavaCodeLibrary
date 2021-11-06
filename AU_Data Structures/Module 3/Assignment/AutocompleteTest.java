@@ -1,7 +1,7 @@
 
 
-import Algorithms.Autocomplete;
-import Algorithms.Term;
+import Autocomplete;
+import Term;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
