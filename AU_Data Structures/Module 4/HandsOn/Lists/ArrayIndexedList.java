@@ -141,6 +141,9 @@ public class ArrayIndexedList<T> implements IndexedList<T> {
 	private void shiftRight(int index) {
 		assert !isFull();
 		// you must fill this in
+		for (int i = rear; i > index; --i) {
+         	    elements[i] = elements[i-1];
+      		}
 	}
 
 	/** Returns true if specified index is in the legal range, false otherwise. */
