@@ -22,3 +22,5 @@ By the end of this course, you should be able to:
  8. Manipulate arrays in assembly programming
 
  9. Understand and use procedures, interrupts
+
+https://quizlet.com/S4lL3N/classes
