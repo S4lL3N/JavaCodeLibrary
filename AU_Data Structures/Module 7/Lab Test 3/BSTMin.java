@@ -69,6 +69,13 @@ public class BSTMin {
          * Returns the minimum value in the binary search tree.
          */
         public T min() {
+            Node n = root;
+            if(n == null) return null;
+            
+            while(n.left != null){
+             n = n.left;   
+            }
+            return n.element;
 
         }
 
