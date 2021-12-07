@@ -1,4 +1,5 @@
 
+
 /**
  * Complete the depth method in the nested BinarySearchTree class below.
  *
@@ -84,7 +85,20 @@ public class BSTDepth {
          * or -1 if value not present.
          */
         public int depth(T value) {
-
+            Node n = root;
+            int level = 1;
+            while(n != null){
+                int comp = value.compareTo(n.element);
+                if(comp > 0) n = n.right;
+                else if (comp < 0) n = n.left;
+                else
+                    break;
+                ++level;
+                    
+            }
+            if (n == null) return -1;
+            
+            return level;
         }
 
 
