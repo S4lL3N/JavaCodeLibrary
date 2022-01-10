@@ -1,5 +1,7 @@
-Spring 2022
+Auburn University
+CPSC 3270
 Dr. Saad Biaz
+Spring 2022
 
 
 Welcome to CPSC 3273: Algorithms I
