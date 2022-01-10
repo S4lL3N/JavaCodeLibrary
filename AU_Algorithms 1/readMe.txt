@@ -3,7 +3,7 @@ Dr. Saad Biaz
 
 
 Welcome to CPSC 3273: Algorithms I
-Fractal Art of a Spiral Created by an Algorithm
+
 This course initiates you to understand, analyze, and design algorithms. You will learn how to design by analyzing well known algorithms that solve fundamental computational problems. An algorithm is good if it is correct and efficient. An algorithm is efficient if it runs fast and uses the least space. You will learn to determine and to characterize these three aspects (correctness, running time, and space) regardless of the programming language or the computer system used.
 
 
