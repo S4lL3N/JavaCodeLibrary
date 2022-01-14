@@ -1,0 +1,20 @@
+Assigned Readings
+Review the following materials to prepare for this week's discussion:
+
+Cormen, T. H., Leiserson, C. E., Rivest, R. L., Stein, C., & MIT Press. (Third Edition)). Introduction to algorithms. Cambridge, Massachusetts: MIT Press.
+Section 1.1
+
+Section 1.2
+
+Section 2.1 (Specifically about Pseudocode Conventions, skip Insert Sort and Loop Invariants)
+
+Review the Module 1 Slide Deck  Download Module 1 Slide Deckfor all of the videos
+About the Readings
+Section 1.1 will introduce key terminology that you will need throughout this course. Read and pay attention to words in bold style. You can skim the topic "What kinds of problems are solved by algorithms" as you do not know precisely every problem. You can also skim the topic "Parallelism.
+
+Section 1.2 will cover the important topic of efficiency. The objective of this course will mainly deal with the efficiency of the algorithms we will study. "Different algorithms devised to solve the same problem often differ dramatically in their efficiency" (from textbook). Efficiency is a paramount to this course.
+
+Section 2.1 will cover the Insert Sort sorting algorithm and pseudocode. Skip the presentation and the analysis of Insert Sort and focus on the pseudocode conventions.
+
+Consider While Reading
+While reading, insure that you understand and learn the meaning of the new terminology and concepts.
